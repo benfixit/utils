@@ -1,4 +1,4 @@
-const isArray = (value: unknown): value is unknown[] => {
+const isArray = (value) => {
   return Object.prototype.toString.call(value) === "[object Array]";
 };
 

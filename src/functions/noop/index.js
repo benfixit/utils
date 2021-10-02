@@ -1,4 +1,4 @@
-const noop = (): undefined => {
+const noop = () => {
   return undefined;
 };
 

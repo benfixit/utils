@@ -1,3 +1,16 @@
 {
-  "presets": ["@babel/env", "@babel/preset-typescript"]
+  "presets": ["@babel/env"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": "./src",
+        "alias": {
+          "@arrays": "./src/arrays",
+          "@functions": "./src/functions",
+          "@strings": "./src/strings"
+        }
+      }
+    ]
+  ]
 }

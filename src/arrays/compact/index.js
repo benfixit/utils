@@ -6,17 +6,15 @@ import isArray from ".";
  * @param array The array to be compact
  * @returns Returns the new array of filtered values
  */
-const compact = <T>(
-  array: Array<T | 0 | false | "" | undefined> | null | undefined
-): T[] => {
-  const result: T[] = [];
+const compact = (array) => {
+  const result = [];
   if (!isArray(array)) {
     return result;
   }
 
   for (let i = 0; i < array.length; i++) {
     if (array[i]) {
-      result.push(array[i] as T);
+      result.push(array[i]);
     }
   }
 

@@ -1,11 +1,10 @@
-import { compact } from "../arrays";
-import { Nullable } from "../typings";
+import { compact } from "@arrays";
 /**
  * Joins an array of classnames and returns a string
  * @param classes
  * @returns
  */
-const className = (classes: Nullable<string>[]): string => {
+const className = (classes) => {
   return compact(classes).join(" ");
 };
 
